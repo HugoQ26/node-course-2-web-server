@@ -40,7 +40,11 @@ app.get('/', (req, res) => {
   res.render('main.hbs', {
     pageTitle: 'Main Page'    
   });
-})
+});
+
+app.get('/projects', (req, res) => {
+	res.render('projects.hbs');
+});
 
 
 
